@@ -1,0 +1,36 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+<div class="row">
+	<div class="col-md-9">
+		<div class="card">
+			<div class="card-header card-header-primary">
+				<h4 class="card-title ">Indicadores</h4>
+			</div>
+			<div class="card-body">
+				<table class="table table-datatable">
+					<thead>
+						<tr>
+							<th>Indicador</th>
+							<th>Valor</th>
+							<th>Equipo</th>
+						</tr>
+					</thead>
+					<tbody>
+					{% for indicador in indicador_list %}
+						<tr>
+							<td>{{ indicador.nombre }}</td>
+							<td>{{ indicador.valor }}</td>
+							<td>{{ indicador.departamento }}</td>
+						</tr>
+					{% endfor %}
+					</tbody>
+				</table>
+			</div>
+			<div class="card-footer pull-right">
+				<a href="{% url 'indicador_add' %}" class="btn btn-primary">Nuevo indicador</a>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}

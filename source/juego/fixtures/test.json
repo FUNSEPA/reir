@@ -1,0 +1,1525 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$100000$ctmjGXC9YmS3$wenaaMjUU92VhQfH06H5SBFp3jHO6d1EgiGiC4asqfg=",
+    "last_login": "2018-04-22T15:07:41.398Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2018-04-20T14:34:46.682Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "hola1234.",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "lmarroquin",
+    "first_name": "Liza",
+    "last_name": "Marroqu\u00edn",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-04-20T14:37:03Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "hola1234.",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "kdelvalle",
+    "first_name": "Karla",
+    "last_name": "del Valle",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-04-20T14:37:48Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "hola1234.",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mrcante",
+    "first_name": "Melvin",
+    "last_name": "Cant\u00e9",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-04-20T14:38:07Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "hola1234.",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "edecelada",
+    "first_name": "Eugenia",
+    "last_name": "de Celada",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-04-22T15:14:10Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "hola1234.",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "epacaja",
+    "first_name": "Esdin",
+    "last_name": "Pacaja",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-04-22T15:14:39Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 7,
+  "fields": {
+    "password": "hola1234.",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "mhernandez",
+    "first_name": "Mayra",
+    "last_name": "Hernandez",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2018-04-22T15:20:31Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "i6l8ss5fth6wdxktn4uhgwqr56lnzbcn",
+  "fields": {
+    "session_data": "OTMyY2M5ZDlkMzJkNjQwYmNkODI3MTIyZGE4NzljNjkxNzI1OTBmNjp7Il9hdXRoX3VzZXJfaGFzaCI6IjNhMGQ1NTljN2ZhMzE0ODBhYmJkNGE0YzM3OGEwZTJmZGQ3OGI0NWUiLCJfYXV0aF91c2VyX2lkIjoiMSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+    "expire_date": "2018-05-04T14:35:39.395Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "v0m71a4v152u0mcity8u6ywz2gh0cytf",
+  "fields": {
+    "session_data": "M2IyMWM3ZmY1ODhlMGU5YzNmMDQzMDAwMjBjYmM0MmU1NjBiM2FlZDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIzYTBkNTU5YzdmYTMxNDgwYWJiZDRhNGMzNzhhMGUyZmRkNzhiNDVlIn0=",
+    "expire_date": "2018-05-06T15:07:41.415Z"
+  }
+},
+{
+  "model": "juego.departamento",
+  "pk": 1,
+  "fields": {
+    "nombre": "Tecnolog\u00eda para Educar",
+    "nombre_corto": "TPE",
+    "color": "#e64b55"
+  }
+},
+{
+  "model": "juego.departamento",
+  "pk": 2,
+  "fields": {
+    "nombre": "Capacitaci\u00f3n",
+    "nombre_corto": "CyD",
+    "color": "#ff851b"
+  }
+},
+{
+  "model": "juego.colaborador",
+  "pk": 2,
+  "fields": {
+    "departamento": 1,
+    "coordinador": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "juego.colaborador",
+  "pk": 3,
+  "fields": {
+    "departamento": 1,
+    "coordinador": true,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "juego.colaborador",
+  "pk": 4,
+  "fields": {
+    "departamento": 1,
+    "coordinador": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "juego.colaborador",
+  "pk": 5,
+  "fields": {
+    "departamento": 2,
+    "coordinador": true,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "juego.colaborador",
+  "pk": 6,
+  "fields": {
+    "departamento": 2,
+    "coordinador": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "juego.colaborador",
+  "pk": 7,
+  "fields": {
+    "departamento": 2,
+    "coordinador": false,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "juego.valor",
+  "pk": 1,
+  "fields": {
+    "nombre": "Responsabilidad"
+  }
+},
+{
+  "model": "juego.valor",
+  "pk": 2,
+  "fields": {
+    "nombre": "Excelencia"
+  }
+},
+{
+  "model": "juego.indicador",
+  "pk": 1,
+  "fields": {
+    "nombre": "Puntualidad",
+    "descripcion": "",
+    "departamento": 1,
+    "valor": 1
+  }
+},
+{
+  "model": "juego.indicador",
+  "pk": 2,
+  "fields": {
+    "nombre": "Informe",
+    "descripcion": "",
+    "departamento": 1,
+    "valor": 1
+  }
+},
+{
+  "model": "juego.indicador",
+  "pk": 3,
+  "fields": {
+    "nombre": "Puntualidad",
+    "descripcion": "",
+    "departamento": 2,
+    "valor": 1
+  }
+},
+{
+  "model": "juego.indicador",
+  "pk": 4,
+  "fields": {
+    "nombre": "Informe",
+    "descripcion": "",
+    "departamento": 2,
+    "valor": 1
+  }
+},
+{
+  "model": "juego.competencia",
+  "pk": 1,
+  "fields": {
+    "valor": 1,
+    "fecha_inicio": "2018-04-20",
+    "fecha_fin": "2018-05-20"
+  }
+},
+{
+  "model": "juego.semana",
+  "pk": 1,
+  "fields": {
+    "numero": 1,
+    "competencia": 1
+  }
+},
+{
+  "model": "juego.semana",
+  "pk": 2,
+  "fields": {
+    "numero": 2,
+    "competencia": 1
+  }
+},
+{
+  "model": "juego.semana",
+  "pk": 3,
+  "fields": {
+    "numero": 3,
+    "competencia": 1
+  }
+},
+{
+  "model": "juego.semana",
+  "pk": 4,
+  "fields": {
+    "numero": 4,
+    "competencia": 1
+  }
+},
+{
+  "model": "juego.rubrica",
+  "pk": 1,
+  "fields": {
+    "indicador": 1,
+    "semana": 1
+  }
+},
+{
+  "model": "juego.rubrica",
+  "pk": 2,
+  "fields": {
+    "indicador": 1,
+    "semana": 2
+  }
+},
+{
+  "model": "juego.rubrica",
+  "pk": 3,
+  "fields": {
+    "indicador": 1,
+    "semana": 3
+  }
+},
+{
+  "model": "juego.rubrica",
+  "pk": 4,
+  "fields": {
+    "indicador": 1,
+    "semana": 4
+  }
+},
+{
+  "model": "juego.rubrica",
+  "pk": 5,
+  "fields": {
+    "indicador": 2,
+    "semana": 3
+  }
+},
+{
+  "model": "juego.rubrica",
+  "pk": 6,
+  "fields": {
+    "indicador": 2,
+    "semana": 1
+  }
+},
+{
+  "model": "juego.rubrica",
+  "pk": 7,
+  "fields": {
+    "indicador": 2,
+    "semana": 2
+  }
+},
+{
+  "model": "juego.rubrica",
+  "pk": 8,
+  "fields": {
+    "indicador": 2,
+    "semana": 4
+  }
+},
+{
+  "model": "juego.rubrica",
+  "pk": 9,
+  "fields": {
+    "indicador": 3,
+    "semana": 1
+  }
+},
+{
+  "model": "juego.rubrica",
+  "pk": 10,
+  "fields": {
+    "indicador": 3,
+    "semana": 2
+  }
+},
+{
+  "model": "juego.rubrica",
+  "pk": 11,
+  "fields": {
+    "indicador": 4,
+    "semana": 1
+  }
+},
+{
+  "model": "juego.rubrica",
+  "pk": 12,
+  "fields": {
+    "indicador": 4,
+    "semana": 2
+  }
+},
+{
+  "model": "juego.punteo",
+  "pk": 11,
+  "fields": {
+    "colaborador": 2,
+    "entregado_por": 3,
+    "rubrica": 1,
+    "punteo": 3,
+    "porcentaje": "60.00"
+  }
+},
+{
+  "model": "juego.punteo",
+  "pk": 12,
+  "fields": {
+    "colaborador": 2,
+    "entregado_por": 3,
+    "rubrica": 2,
+    "punteo": 4,
+    "porcentaje": "80.00"
+  }
+},
+{
+  "model": "juego.punteo",
+  "pk": 13,
+  "fields": {
+    "colaborador": 4,
+    "entregado_por": 3,
+    "rubrica": 1,
+    "punteo": 2,
+    "porcentaje": "40.00"
+  }
+},
+{
+  "model": "juego.punteo",
+  "pk": 14,
+  "fields": {
+    "colaborador": 4,
+    "entregado_por": 3,
+    "rubrica": 2,
+    "punteo": 3,
+    "porcentaje": "60.00"
+  }
+},
+{
+  "model": "juego.punteo",
+  "pk": 15,
+  "fields": {
+    "colaborador": 6,
+    "entregado_por": 5,
+    "rubrica": 9,
+    "punteo": 4,
+    "porcentaje": "80.00"
+  }
+},
+{
+  "model": "juego.punteo",
+  "pk": 16,
+  "fields": {
+    "colaborador": 6,
+    "entregado_por": 5,
+    "rubrica": 10,
+    "punteo": 5,
+    "porcentaje": "100.00"
+  }
+},
+{
+  "model": "juego.punteo",
+  "pk": 17,
+  "fields": {
+    "colaborador": 7,
+    "entregado_por": 5,
+    "rubrica": 9,
+    "punteo": 1,
+    "porcentaje": "20.00"
+  }
+},
+{
+  "model": "juego.punteo",
+  "pk": 18,
+  "fields": {
+    "colaborador": 7,
+    "entregado_por": 5,
+    "rubrica": 10,
+    "punteo": 1,
+    "porcentaje": "20.00"
+  }
+},
+{
+  "model": "juego.punteo",
+  "pk": 19,
+  "fields": {
+    "colaborador": 2,
+    "entregado_por": 3,
+    "rubrica": 6,
+    "punteo": 2,
+    "porcentaje": "40.00"
+  }
+},
+{
+  "model": "juego.punteo",
+  "pk": 20,
+  "fields": {
+    "colaborador": 2,
+    "entregado_por": 3,
+    "rubrica": 7,
+    "punteo": 2,
+    "porcentaje": "40.00"
+  }
+},
+{
+  "model": "juego.punteo",
+  "pk": 21,
+  "fields": {
+    "colaborador": 4,
+    "entregado_por": 3,
+    "rubrica": 6,
+    "punteo": 1,
+    "porcentaje": "20.00"
+  }
+},
+{
+  "model": "juego.punteo",
+  "pk": 22,
+  "fields": {
+    "colaborador": 4,
+    "entregado_por": 3,
+    "rubrica": 7,
+    "punteo": 4,
+    "porcentaje": "80.00"
+  }
+},
+{
+  "model": "juego.punteo",
+  "pk": 23,
+  "fields": {
+    "colaborador": 6,
+    "entregado_por": 5,
+    "rubrica": 11,
+    "punteo": 1,
+    "porcentaje": "20.00"
+  }
+},
+{
+  "model": "juego.punteo",
+  "pk": 24,
+  "fields": {
+    "colaborador": 6,
+    "entregado_por": 5,
+    "rubrica": 12,
+    "punteo": 5,
+    "porcentaje": "100.00"
+  }
+},
+{
+  "model": "juego.punteo",
+  "pk": 25,
+  "fields": {
+    "colaborador": 7,
+    "entregado_por": 5,
+    "rubrica": 11,
+    "punteo": 3,
+    "porcentaje": "60.00"
+  }
+},
+{
+  "model": "juego.punteo",
+  "pk": 26,
+  "fields": {
+    "colaborador": 7,
+    "entregado_por": 5,
+    "rubrica": 12,
+    "punteo": 4,
+    "porcentaje": "80.00"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2018-04-20T14:36:36.545Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "TPE",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2018-04-20T14:36:44.357Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "CyD",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2018-04-20T14:37:46.505Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "Liza Marroqu\u00edn",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2018-04-20T14:38:07.245Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "Karla del Valle",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2018-04-20T14:38:24.552Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "Melvin Cant\u00e9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2018-04-20T14:38:40.762Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Responsabilidad",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2018-04-20T14:38:47.695Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Excelencia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2018-04-20T14:39:00.494Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Puntualidad",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2018-04-20T14:39:10.264Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Informe",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2018-04-20T14:39:48.774Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Responsabilidad",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2018-04-20T14:40:04.151Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Responsabilidad - 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2018-04-20T14:40:06.928Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Responsabilidad - 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2018-04-20T14:40:09.253Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Responsabilidad - 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2018-04-20T14:40:12.469Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Responsabilidad - 4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2018-04-20T14:41:05.336Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "TPE - Puntualidad - Responsabilidad - 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2018-04-20T14:41:08.408Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "TPE - Puntualidad - Responsabilidad - 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2018-04-20T14:41:11.415Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "TPE - Puntualidad - Responsabilidad - 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2018-04-20T14:41:14.372Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "4",
+    "object_repr": "TPE - Puntualidad - Responsabilidad - 4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2018-04-20T14:41:18.717Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "5",
+    "object_repr": "TPE - Informe - Responsabilidad - 3",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2018-04-20T14:41:59.250Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "Liza Marroqu\u00edn",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2018-04-20T14:42:08.617Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "2",
+    "object_repr": "Liza Marroqu\u00edn",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2018-04-20T14:43:02.992Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "3",
+    "object_repr": "Liza Marroqu\u00edn",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2018-04-20T15:10:24.348Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "4",
+    "object_repr": "Liza Marroqu\u00edn",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2018-04-20T15:10:33.801Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "4",
+    "object_repr": "Liza Marroqu\u00edn",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"punteo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2018-04-20T15:18:34.244Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "6",
+    "object_repr": "TPE - Informe - Responsabilidad - 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2018-04-20T15:19:09.973Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "7",
+    "object_repr": "TPE - Informe - Responsabilidad - 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2018-04-20T15:19:15.867Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "TPE - Informe - Responsabilidad - 4",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2018-04-20T15:19:38.417Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "5",
+    "object_repr": "Liza Marroqu\u00edn",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2018-04-20T15:19:46.140Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "6",
+    "object_repr": "Liza Marroqu\u00edn",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2018-04-20T15:19:58.662Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "7",
+    "object_repr": "Liza Marroqu\u00edn",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2018-04-20T15:21:44.250Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "8",
+    "object_repr": "Melvin Cant\u00e9 - TPE - Puntualidad - Responsabilidad - 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2018-04-20T15:21:57.263Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "9",
+    "object_repr": "Melvin Cant\u00e9 - TPE - Informe - Responsabilidad - 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2018-04-22T15:14:37.052Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "5",
+    "object_repr": "Eugenia de Celada",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2018-04-22T15:15:00.145Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "6",
+    "object_repr": "Esdin Pacaja",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2018-04-22T15:15:22.175Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "10",
+    "object_repr": "Esdin Pacaja - TPE - Puntualidad - Responsabilidad - 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2018-04-22T15:20:50.071Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "7",
+    "object_repr": "Mayra Hernandez",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2018-04-22T15:21:02.234Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "10",
+    "object_repr": "Esdin Pacaja - TPE - Puntualidad - Responsabilidad - 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2018-04-22T15:21:02.249Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "9",
+    "object_repr": "Melvin Cant\u00e9 - TPE - Informe - Responsabilidad - 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2018-04-22T15:21:02.267Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "8",
+    "object_repr": "Melvin Cant\u00e9 - TPE - Puntualidad - Responsabilidad - 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2018-04-22T15:21:02.280Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "7",
+    "object_repr": "Liza Marroqu\u00edn - TPE - Informe - Responsabilidad - 4",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2018-04-22T15:21:02.294Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "6",
+    "object_repr": "Liza Marroqu\u00edn - TPE - Informe - Responsabilidad - 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2018-04-22T15:21:02.310Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "5",
+    "object_repr": "Liza Marroqu\u00edn - TPE - Informe - Responsabilidad - 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2018-04-22T15:21:02.323Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "4",
+    "object_repr": "Liza Marroqu\u00edn - TPE - Informe - Responsabilidad - 3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2018-04-22T15:21:02.336Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "3",
+    "object_repr": "Liza Marroqu\u00edn - TPE - Puntualidad - Responsabilidad - 3",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2018-04-22T15:21:02.353Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "2",
+    "object_repr": "Liza Marroqu\u00edn - TPE - Puntualidad - Responsabilidad - 2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2018-04-22T15:21:02.373Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "Liza Marroqu\u00edn - TPE - Puntualidad - Responsabilidad - 1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2018-04-22T15:21:43.126Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "11",
+    "object_repr": "Liza Marroqu\u00edn - TPE - Puntualidad - Responsabilidad - 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2018-04-22T15:22:00.889Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "12",
+    "object_repr": "Liza Marroqu\u00edn - TPE - Puntualidad - Responsabilidad - 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2018-04-22T15:22:14.233Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "13",
+    "object_repr": "Melvin Cant\u00e9 - TPE - Puntualidad - Responsabilidad - 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2018-04-22T15:22:25.650Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "14",
+    "object_repr": "Melvin Cant\u00e9 - TPE - Puntualidad - Responsabilidad - 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2018-04-22T15:23:03.742Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "CyD - Puntualidad",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2018-04-22T15:23:08.139Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "9",
+    "object_repr": "CyD - Puntualidad - Responsabilidad - 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2018-04-22T15:23:16.754Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "15",
+    "object_repr": "Esdin Pacaja - CyD - Puntualidad - Responsabilidad - 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2018-04-22T15:23:41.960Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "10",
+    "object_repr": "CyD - Puntualidad - Responsabilidad - 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2018-04-22T15:23:48.778Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "16",
+    "object_repr": "Mayra Hernandez - CyD - Puntualidad - Responsabilidad - 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2018-04-22T15:24:18.362Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "16",
+    "object_repr": "Esdin Pacaja - CyD - Puntualidad - Responsabilidad - 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"colaborador\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2018-04-22T15:24:25.657Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "17",
+    "object_repr": "Mayra Hernandez - CyD - Puntualidad - Responsabilidad - 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2018-04-22T15:24:38.406Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "18",
+    "object_repr": "Mayra Hernandez - CyD - Puntualidad - Responsabilidad - 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2018-04-22T15:24:53.378Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "18",
+    "object_repr": "Mayra Hernandez - CyD - Puntualidad - Responsabilidad - 2",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"punteo\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2018-04-22T15:33:06.563Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "CyD - Informe",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2018-04-22T15:33:56.604Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "19",
+    "object_repr": "Liza Marroqu\u00edn - TPE - Informe - Responsabilidad - 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2018-04-22T15:34:08.860Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "20",
+    "object_repr": "Liza Marroqu\u00edn - TPE - Informe - Responsabilidad - 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2018-04-22T15:34:30.170Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "21",
+    "object_repr": "Melvin Cant\u00e9 - TPE - Informe - Responsabilidad - 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2018-04-22T15:34:49.009Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "22",
+    "object_repr": "Melvin Cant\u00e9 - TPE - Informe - Responsabilidad - 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2018-04-22T15:35:16.428Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "11",
+    "object_repr": "CyD - Informe - Responsabilidad - 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2018-04-22T15:35:23.690Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "23",
+    "object_repr": "Esdin Pacaja - CyD - Informe - Responsabilidad - 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2018-04-22T15:35:42.159Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "12",
+    "object_repr": "CyD - Informe - Responsabilidad - 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2018-04-22T15:35:48.239Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "24",
+    "object_repr": "Esdin Pacaja - CyD - Informe - Responsabilidad - 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2018-04-22T15:36:10.626Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "25",
+    "object_repr": "Mayra Hernandez - CyD - Informe - Responsabilidad - 1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2018-04-22T15:36:23.075Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "26",
+    "object_repr": "Mayra Hernandez - CyD - Informe - Responsabilidad - 2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2018-04-23T02:33:45.840Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "6",
+    "object_repr": "Esdin Pacaja",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"coordinador\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2018-04-23T13:51:59.775Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "11",
+    "object_repr": "Liza Marroqu\u00edn - TPE - Puntualidad - Responsabilidad - 1",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+}
+]

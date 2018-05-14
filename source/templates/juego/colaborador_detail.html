@@ -1,0 +1,87 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+<div class="row">
+	<div class="col-lg-9 col-md-9">
+		<div class="card">
+			<div class="card-header card-header-info">
+				<h4 class="card-title ">{{ colaborador }}</h4>
+				<p class="card-category">{{ colaborador.departamento.nombre }}</p>
+			</div>
+			<div class="card-body">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Indicador</th>
+							<th>Semana</th>
+							<th>Puntos</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for punteo in colaborador.puntuaciones.all %}
+						<tr>
+							<td>{{ punteo.rubrica.indicador.nombre }}</td>
+							<td>{{ punteo.rubrica.semana }}</td>
+							<td>{{ punteo.punteo }}</td>
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-3 col-sm-12">
+		<div class="card card-stats">
+			<div class="card-header card-header-danger card-header-icon">
+				<div class="card-icon">
+					<i class="material-icons">done</i>
+				</div>
+				<p class="card-category">Puntos en total</p>
+				<h3 class="card-title">{{ puntos }}</h3>
+			</div>
+		</div>
+		{% for semana in semanas %}
+		<div class="card card-stats">
+			<div class="card-header card-header-warning card-header-icon">
+				<div class="card-icon">
+					<i class="material-icons">done</i>
+				</div>
+				<p class="card-category">Puntos de la semana {{ forloop.counter }}</p>
+				<h3 class="card-title">{{ semana.puntos }}</h3>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="card card-chart">
+			<div class="card-header card-header-success">
+				<div class="ct-chart" id="dailySalesChart"></div>
+			</div>
+			<div class="card-body">
+				<h4 class="card-title">Puntos semanales</h4>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}
+
+{% block extra_js %}
+<script type="text/javascript">
+	var SEMANAS = [{% for semana in semanas %} {{ semana.numero }}, {% endfor %}];
+	var PUNTOS = [[{% for semana in semanas %} {{ semana.puntos }}, {% endfor %}]];
+    $(document).ready(function() {
+
+        //init wizard
+
+        // demo.initMaterialWizard();
+
+        // Javascript method's body can be found in assets/js/demos.js
+        demo.initDashboardPageCharts();
+
+        demo.initCharts();
+
+    });
+</script>
+{% endblock extra_js %}

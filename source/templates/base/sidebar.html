@@ -1,0 +1,37 @@
+<ul class="nav">
+	{% url 'home' as home_url %}
+	<li class="nav-item {% if request.get_full_path == home_url %}active{% endif %}">
+		<a class="nav-link" href="{{ home_url }}">
+			<i class="material-icons">dashboard</i>
+			<p>Inicio</p>
+		</a>
+	</li>
+	{% url 'colaborador_list' as colaborador_list_url %}
+	<li class="nav-item {% if request.get_full_path == colaborador_list_url %}active{% endif %}">
+		<a class="nav-link" href="{{ colaborador_list_url }}">
+			<i class="material-icons">person</i>
+			<p>Colaboradores</p>
+		</a>
+	</li>
+	{% url 'indicador_list' as indicador_list_url %}
+	<li class="nav-item {% if request.get_full_path == indicador_list_url %}active{% endif %}">
+		<a class="nav-link" href="{{ indicador_list_url }}">
+			<i class="material-icons">library_books</i>
+			<p>Indicador</p>
+		</a>
+	</li>
+	{% url 'punteo_add' as punteo_add_url %}
+	<li class="nav-item {% if request.get_full_path == punteo_add_url %}active{% endif %}">
+		<a class="nav-link" href="{{ punteo_add_url }}">
+			<i class="material-icons">done</i>
+			<p>Punteo</p>
+		</a>
+	</li>
+	{% url 'equipo_list' as equipo_list_url %}
+	<li class="nav-item {% if request.get_full_path == equipo_list_url %}active{% endif %}">
+		<a class="nav-link" href="{{ equipo_list_url }}">
+			<i class="material-icons">bubble_chart</i>
+			<p>Equipos</p>
+		</a>
+	</li>
+</ul>

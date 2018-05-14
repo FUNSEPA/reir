@@ -1,0 +1,42 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+<div class="row">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header card-header-info">
+				<h4 class="card-title ">Colaboradores</h4>
+				<p class="card-category">Nuestro grandioso equipo</p>
+			</div>
+			<div class="card-body">
+				<div class="table-responsive">
+					<table class="table table-hover table-striped">
+						<thead class="text-info">
+							<tr>
+								<th>
+									Nombre
+								</th>
+								<th>
+									Equipo
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for colaborador in colaborador_list %}
+							<tr>
+								<td>
+									<a href="{{ colaborador.get_absolute_url }}">
+										{{ colaborador }}
+									</a>
+								</td>
+								<td>{{ colaborador.departamento }}</td>
+							</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}

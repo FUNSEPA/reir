@@ -1,0 +1,186 @@
+{% extends "base/base.html" %}
+
+{% load staticfiles %}
+
+{% block main_title %}
+{{ competencia }}
+{% endblock main_title %}
+
+{% block content %}
+<div class="row">
+	<div class="col-lg-6 col-md-12">
+		<div class="card">
+			<div class="card-header card-header-tabs card-header-danger">
+				<div class="nav-tabs-navigation">
+					<div class="nav-tabs-wrapper">
+						<span class="nav-tabs-title">Semanas:</span>
+						<ul class="nav nav-tabs" data-tabs="tabs">
+							{% for semana in competencia.semanas.all %}
+							<li class="nav-item">
+								<a class="nav-link {% if forloop.first %}active{% endif %}" href="#semana-{{ semana.numero }}" data-toggle="tab">
+									{{ semana.numero }}
+									<div class="ripple-container"></div>
+								</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="card-body table-responsive">
+				<div class="tab-content">
+					{% for semana in competencia.semanas.all|dictsort:"numero" %}
+					<div class="tab-pane {% if forloop.first %}active{% endif %}" id="semana-{{ semana.numero }}">
+						<table class="table table-datatable">
+							<thead class="text-danger">
+								<tr>
+									<th>Posición</th>
+									<th>Nombre</th>
+									<th>Puntos</th>
+								</tr>
+							</thead>
+							<tbody>
+								{% for colaborador in semana.puntos_colaborador|dictsortreversed:"puntos" %}
+								<tr>
+									<td>{{ forloop.counter }}</td>
+									<td>{{ colaborador.get_full_name }}</td>
+									<td>{{ colaborador.puntos }}</td>
+								</tr>
+								{% endfor %}
+							</tbody>
+						</table>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-6 col-md-12">
+		<div class="card">
+			<div class="card-header card-header-info">
+				<h4 class="card-title">Global</h4>
+			</div>
+			<div class="card-body table-responsive">
+				<table class="table table-hover table-datatable">
+					<thead class="text-info">
+						<th>Posición</th>
+						<th>Nombre</th>
+						<th>Equipo</th>
+						<th>Puntos</th>
+					</thead>
+					<tbody>
+						{% for colaborador in competencia.puntos_colaborador|dictsortreversed:"puntos" %}
+						<tr>
+							<td>{{ forloop.counter }}</td>
+							<td>{{ colaborador.get_full_name }}</td>
+							<td>{{ colaborador.departamento }}</td>
+							<td>{{ colaborador.puntos }}</td>
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-12 col-md-12">
+		<div class="card">
+			<div class="card-header card-header-tabs card-header-danger">
+				<div class="nav-tabs-navigation">
+					<div class="nav-tabs-wrapper">
+						<span class="nav-tabs-title">Equipos:</span>
+						<ul class="nav nav-tabs" data-tabs="tabs">
+							{% for equipo in equipos_chart %}
+							<li class="nav-item">
+								<a class="nav-link {% if forloop.first %}active{% endif %}" href="#equipo-{{ equipo.id }}" data-toggle="tab">
+									{{ equipo.nombre }}
+									<div class="ripple-container"></div>
+								</a>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="tab-content">
+					{% for equipo in equipos_chart %}
+					<div class="tab-pane {% if forloop.first %}active{% endif %}" id="equipo-{{ equipo.id }}">
+						<table class="table">
+							<thead class="text-danger">
+								<tr>
+									<th>Indicador</th>
+									<th>Puntos</th>
+								</tr>
+							</thead>
+							<tbody>
+								{% for indicador in equipo.datos %}
+								<tr>
+									<td>{{ indicador.indicador }}</td>
+									<td>{{ indicador.puntos|default_if_none:"0" }}</td>
+								</tr>
+								{% endfor %}
+							</tbody>
+						</table>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% for equipo in equipos_chart %}
+	<div class="card card-chart">
+							<div class="card-header card-header-success">
+								<div class="ct-chart" id="chart-{{ equipo.nombre }}">
+								</div>
+							</div>
+						</div>
+{% endfor %}
+{% endblock content %}
+
+{% block extra_js %}
+<script type="text/javascript">
+$().ready(function () {
+
+	{% for equipo in equipos_chart %}
+	var data{{equipo.nombre}} = {
+		labels: [{% for indicador in equipo.datos %}'{{ indicador.indicador }}',{% endfor %}],
+		series: [[{% for indicador in equipo.datos %}'{{ indicador.puntos|floatformat|default_if_none:"0" }}',{% endfor %}]]
+	};
+	{% endfor %}
+	var dataSimpleBarChart = {
+		labels: ['Jan', 'Feb', 'Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+		series: [
+		[542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895]
+		]
+	};
+
+	var optionsSimpleBarChart = {
+		seriesBarDistance: 10,
+		axisX: {
+			showGrid: false
+		}
+	};
+
+	var responsiveOptionsSimpleBarChart = [
+	['screen and (max-width: 640px)', {
+		seriesBarDistance: 5,
+		axisX: {
+			labelInterpolationFnc: function(value) {
+				return value[0];
+			}
+		}
+	}]
+	];
+
+	{% for equipo in equipos_chart %}	
+	var chart{{ equipo.nombre }} = Chartist.Bar('#chart-{{ equipo.nombre }}');
+	console.log(chart{{ equipo.nombre }}.container);
+	chart{{ equipo.nombre }}.update(data{{equipo.nombre}}, optionsSimpleBarChart, responsiveOptionsSimpleBarChart);
+	md.startAnimationForBarChart(chart{{ equipo.nombre }});
+	{% endfor %}
+});
+</script>
+{% endblock extra_js %}
